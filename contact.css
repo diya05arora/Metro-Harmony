@@ -1,0 +1,63 @@
+body{
+    color: white;
+}
+
+    .mb-3{
+        margin: auto;
+        width: 40%;
+    }
+    h2{
+        text-align: center;
+    }
+    .button{
+        margin: auto;
+    }
+
+    .logo {
+        height: 25vh;
+        width: 13vw;
+    }
+    .mb-3::before{
+        content: "";
+        background: url(bg2.jpeg) no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    .btn-outline-primary {
+        --bs-btn-color: white;
+        --bs-btn-border-color: white;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: black;
+        --bs-btn-hover-border-color: white;
+    }
+    /* .btn{
+        margin: 0px 300px;
+    } */
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            text-align: center;
+        }
+
+        .navbar-nav {
+            margin-top: 10px;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0;
+        }
+
+        .navbar-toggler {
+            margin-top: 10px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+        
+    }

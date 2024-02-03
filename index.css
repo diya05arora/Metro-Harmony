@@ -1,0 +1,41 @@
+.logo{
+    height: 25vh;
+    width: 13vw;
+}
+body{
+    background-color: rgba(162, 216, 255, 0.4);
+}
+.d-block {
+    width: 100%;
+    height: 70vh;
+}
+
+.text {
+    font-size: 40px;
+    font-family: "Protest Riot";
+    color: rgb(248, 234, 234);
+}
+.card{
+    margin: auto;
+}
+@media (max-width: 991px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        margin-top: 10px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+}
