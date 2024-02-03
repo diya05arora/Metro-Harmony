@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const dataUrl = "METRO_DATA.xlsx";
 
     function fetchData(url, callback) {
@@ -27,14 +26,32 @@ document.addEventListener("DOMContentLoaded", function () {
         const dropdown = document.getElementById(elementId);
         data.forEach((row) => {
             const option = document.createElement("option");
-            option.value = row[0]; 
+            option.value = row[0];
             option.text = row[0];
             dropdown.appendChild(option);
         });
     }
 
+    function updateLineInput(selectedStation, data) {
+        const lineInput = document.getElementById("line");
+
+        const selectedRow = data.find((row) => row[0] === selectedStation);
+
+        if (selectedRow) {
+            lineInput.value = selectedRow[1];
+        } else {
+            lineInput.value = "";
+        }
+    }
+
     fetchData(dataUrl, function (data) {
         populateDropdown("from", data);
         populateDropdown("to", data);
+
+        const fromDropdown = document.getElementById("from");
+        fromDropdown.addEventListener("change", function () {
+            const selectedStation = fromDropdown.value;
+            updateLineInput(selectedStation, data);
+        });
     });
 });
