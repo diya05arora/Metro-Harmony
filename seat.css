@@ -40,3 +40,8 @@ body{
         height: 80px;
     }
 }
+.btn{
+    margin: 20px 10px;
+    border: 2px solid white;
+    color: white;
+}
