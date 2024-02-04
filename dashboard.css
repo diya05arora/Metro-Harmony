@@ -14,6 +14,17 @@
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        container::before {
+            content: "";
+            background: url(bg2.jpeg) no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.9;
+}
 
         .tabs {
             display: flex;
