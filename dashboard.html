@@ -55,12 +55,14 @@
             </form>
         </div>
         <div class="tab-content" id="signup-content" style="display: none;">
-            <form>
+            <form id="signup-form">
                 <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <input type="password" placeholder="Confirm Password" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
                 <button type="submit">Sign Up</button>
             </form>
+            <div id="error-message"></div>
+        </div>
         </div>
     </div>
     <script src="dashboard.js"></script>
